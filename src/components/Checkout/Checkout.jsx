@@ -1,7 +1,13 @@
 import React from 'react'
+import { useStore } from 'zustand'
+import { useNavigate } from 'react-router-dom'
 
-export default function Checkout() {
+const Checkout = () => {
+  
+  const nextPage = useNavigate()
   return (
     <div>Checkout</div>
   )
 }
+
+export default Checkout

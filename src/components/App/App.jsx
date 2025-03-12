@@ -1,5 +1,6 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Checkout from '../Checkout/Checkout';
 
 function App() {
 
@@ -14,8 +15,9 @@ function App() {
         <p>Pizza is great.</p>
         <Routes>
           {/* <Route path='/' element={<orders />}/> */}
-          {/* <Route path='/orders' element={<cart />}/> */}
-          {/* <Route path='/cart' element={<checkout />}/> */}
+          {/* <Route path='/orders' element={Orders}></> */}
+          {/* <Route path='/cart' element={<cart />}/> */}
+          <Route path='/checkout' element={<Checkout />}/>
         </Routes>
       </div>
     </Router>
