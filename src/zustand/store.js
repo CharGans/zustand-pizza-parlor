@@ -36,6 +36,17 @@ const useStore = create((set, get) => ({
         }
     }, //end fetchPizza
 
+    addOrder: async (newOrder) => {
+        try {
+            console.log('new pizza order is: ', newOrder);
+            const response = await axios.post(
+                "/api/order", newOrder
+            );
+        } catch (error) {
+            console.log("Error in addOrder: ", error)
+        }
+    }, //end addOrder
+
 
 
 })) //end useStore
