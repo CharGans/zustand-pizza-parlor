@@ -1,7 +1,12 @@
 import React from 'react'
+import { useStore } from 'zustand'
+import { useNavigate } from 'react-router-dom'
 
-export default function SelectPizza() {
+const SelectPizza = () => {
+  const nextPage = useNavigate()
   return (
     <div>SelectPizza</div>
   )
 }
+
+export default SelectPizza
