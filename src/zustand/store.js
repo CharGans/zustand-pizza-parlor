@@ -39,3 +39,5 @@ const useStore = create((set, get) => ({
 
 
 })) //end useStore
+
+export default useStore;
